@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">Business Card</string>
+    <string name="designation">Freelance UX Designer | Android Developer</string>
+    <string name="phone_number">+91123456789</string>
+    <string name="email_address">nitin@ni3bobade.com</string>
+    <string name="location">Online</string>
+    <string name="business_information"><![CDATA[App wireframing, mockup, prototype & development]]></string>
+    <string name="portfolio">Portfolio</string>
+
+</resources>

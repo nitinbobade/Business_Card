@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_bg"
+        android:orientation="vertical"
+        tools:context="com.ni3bobade.businesscard.MainActivity">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/profile_pic" />
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="-8dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/designation"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="312dp">
+
+
+            <ImageView
+                android:id="@+id/phone_image_view"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="32dp"
+                android:src="@drawable/phone_icn" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/phone_image_view"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/phone_image_view"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/phone_number"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/email_image_view"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignStart="@+id/phone_image_view"
+                android:layout_below="@+id/phone_image_view"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/mail_icn" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView"
+                android:layout_alignTop="@+id/email_image_view"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/email_address"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/location_image_view"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignStart="@+id/phone_image_view"
+                android:layout_below="@+id/email_image_view"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/location_icn" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView"
+                android:layout_alignTop="@+id/location_image_view"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/location"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/description_image_view"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignStart="@+id/phone_image_view"
+                android:layout_below="@+id/location_image_view"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/information_icn" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView"
+                android:layout_alignTop="@+id/description_image_view"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/business_information"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/portfolio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/rounded"
+            android:fontFamily="@font/montserrat"
+            android:onClick="tapMeForPortfolio"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:text="@string/portfolio"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>
